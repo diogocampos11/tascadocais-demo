@@ -47,7 +47,7 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-0.
   min-height:84px;
 }
 .brand{
-  display:inline-flex;align-items:baseline;gap:8px;
+  display:inline-flex;align-items:baseline;gap:8px;white-space:nowrap;
   font-family:'Fraunces',serif;font-weight:600;font-size:19px;letter-spacing:.01em;
 }
 .brand small{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:.14em}
@@ -70,7 +70,7 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-0.
 .hero{background:var(--cream);border-bottom:1px solid var(--line)}
 .hero-grid{
   display:grid;grid-template-columns:1.15fr 0.85fr;align-items:center;gap:56px;
-  min-height:0;padding:96px 0 84px;
+  min-height:0;padding:96px 40px 84px;
 }
 .eyebrow{
   font-family:'Fraunces',serif;font-style:italic;font-weight:400;
@@ -89,19 +89,19 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-0.
 .btn-secondary{color:var(--ink);border-bottom:1px solid var(--ink);padding:13px 2px}
 .hero-note{font-size:12.5px;color:var(--muted);letter-spacing:.03em}
 
-.hero-art{position:relative;display:flex;justify-content:center}
+.hero-art{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:28px}
 .hero-illustration{width:100%;max-width:320px;color:var(--ink)}
 .hero-stamp{
-  position:absolute;top:-6px;right:6px;
-  width:84px;height:84px;border-radius:50%;
+  position:absolute;top:0;right:8px;
+  width:96px;height:96px;border-radius:50%;
   border:1px solid var(--clay);
   display:grid;place-content:center;text-align:center;
-  font-family:'Fraunces',serif;font-size:10px;letter-spacing:.1em;color:var(--clay-deep);
-  background:var(--paper);
+  font-family:'Fraunces',serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;line-height:1.3;color:var(--clay-deep);
+  background:var(--paper);box-shadow:0 0 0 5px var(--paper);
 }
-.hero-stamp strong{display:block;font-size:17px;font-weight:600;margin-top:2px}
+.hero-stamp strong{display:block;font-size:24px;font-weight:600;letter-spacing:.02em;margin-top:2px;text-transform:none}
 .art-caption{
-  margin-top:22px;text-align:center;font-size:11.5px;letter-spacing:.08em;
+  margin-top:22px;text-align:center;font-size:12.5px;letter-spacing:.08em;width:100%;
   color:var(--muted);font-style:italic;font-family:'Fraunces',serif;
 }
 
@@ -176,10 +176,11 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-0.
 @media(max-width:860px){
   .container{padding:0 22px}
   .hero-grid,.two-column,.contact-grid{grid-template-columns:1fr}
-  .hero-grid{padding:48px 0 44px;gap:38px}
+  .hero-grid{padding:48px 22px 44px;gap:38px}
   .hero-art{order:-1;margin-bottom:12px}
   .hero-illustration{max-width:200px}
-  .header-inner nav{column-gap:18px;font-size:13px}
+  .header-inner nav{column-gap:14px;font-size:13px;flex-wrap:wrap;justify-content:flex-end}
+  .header-inner{flex-wrap:wrap;row-gap:6px}
   .section{padding:56px 0}
   .menu-card{grid-template-columns:1fr}
   .menu-price{grid-row:1;justify-self:end}
