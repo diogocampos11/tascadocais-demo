@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tasca do Cais — restaurante fictício criado para uma demonstração académica de OSINT e engenharia social.">
+  <meta name="author" content="Joana Ribeiro - Gerência Tasca do Cais"><!-- CAMPO PARA OSINT SIMULADA -->
+  <title>Tasca do Cais — Sabores junto ao rio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/conteudos.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <div class="educational-banner">PROJETO ACADÉMICO · RESTAURANTE E INFORMAÇÕES FICTÍCIAS · ESTG/IPVC</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Tasca do Cais — início"><span>Tasca do Cais</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#conceito">Sobre nós</a>
+        <a href="#ementa">Ementa</a>
+        <a href="#equipa">Equipa</a>
+        <a href="#contactos">Contactos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">VIANA DO CASTELO (FICTÍCIO) · COZINHA PORTUGUESA</div>
+          <h1>O melhor sabor<br><em>é o que se partilha.</em></h1>
+          <p id="frase-restaurante">Um espaço imaginário onde os sabores tradicionais encontram a vida junto ao cais.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#ementa">Conhecer a ementa</a>
+            <a class="btn btn-secondary" href="#contactos">Onde estamos</a>
+          </div>
+          <div class="hero-note">Tradição, produtos locais e um ambiente acolhedor junto ao rio.</div>
+        </div>
+        <div class="hero-art">
+          <svg class="hero-illustration" viewBox="0 0 220 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <ellipse cx="110" cy="150" rx="92" ry="92" stroke="currentColor" stroke-width="1"/>
+            <path d="M60 150c0-30 22-54 50-54s50 24 50 54-22 54-50 54-50-24-50-54Z" stroke="currentColor" stroke-width="1"/>
+            <path d="M70 142c14-10 30-10 40 0M70 158c14 10 30 10 40 0" stroke="currentColor" stroke-width="1"/>
+            <path d="M34 150h14M172 150h14M110 24v14M110 262v-14" stroke="currentColor" stroke-width="1"/>
+            <path d="M108 60c-4 18 4 30 2 48" stroke="currentColor" stroke-width="1" stroke-dasharray="2 5"/>
+          </svg>
+          <div class="hero-stamp">Desde<br><strong>20XX</strong></div>
+          <div class="art-caption">sabores do cais — edição fictícia</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conceito" class="section section-about">
+      <div class="container two-column">
+        <div><span class="section-kicker">A nossa história</span><h2>À mesa, as melhores<br>histórias começam.</h2></div>
+        <div><p id="sobre-texto">[COLEGA 3: preencher história fictícia do restaurante, sem dados reais de terceiros.]</p><p class="note"><strong>Informação académica:</strong> este estabelecimento não existe. O conteúdo é simulado para um trabalho de Cibersegurança.</p></div>
+      </div>
+    </section>
+
+    <section id="ementa" class="section section-menu">
+      <div class="container">
+        <span class="section-kicker">À nossa mesa</span>
+        <div class="section-top"><h2>Alguns favoritos da casa.</h2><span class="muted">Ementa ilustrativa · preços fictícios</span></div>
+        <div class="menu-grid" id="pratos-container" aria-live="polite"></div>
+        <p class="menu-footnote">A versão completa do menu está disponível <a href="menu_tascadocais.pdf">em PDF (menu_tascadocais.pdf)</a>. Os pratos e preços apresentados são apenas exemplos.</p>
+      </div>
+    </section>
+
+    <section id="equipa" class="section section-team">
+      <div class="container two-column">
+        <div><span class="section-kicker">Quem nos recebe</span><h2>Gente que faz<br>a diferença.</h2><p class="muted">Personagens inteiramente fictícias para a simulação OSINT.</p></div>
+        <div class="team-list" id="equipa-container"></div>
+      </div>
+    </section>
+
+    <section id="contactos" class="section section-contact">
+      <div class="container">
+        <span class="section-kicker">Visite-nos</span>
+        <div class="contact-grid">
+          <div><h2>Há sempre lugar<br>à nossa mesa.</h2><p>Endereço e contactos simulados. Não efetuar reservas reais.</p></div>
+          <div class="info-panel">
+            <div class="info-row"><span>Morada</span><strong id="morada">[MORADA FICTÍCIA]</strong></div>
+            <div class="info-row"><span>Horário</span><strong id="horario">[HORÁRIO FICTÍCIO]</strong></div>
+            <div class="info-row"><span>Email</span><strong id="email">[EMAIL FICTÍCIO]</strong></div>
+            <div class="info-row"><span>Telefone</span><strong id="telefone">[TELEFONE FICTÍCIO]</strong></div>
+            <div class="info-row"><span>Redes sociais</span><strong id="sociais">[PERFIS FICTÍCIOS]</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span class="brand">✦ TASCA DO CAIS</span><small>Exercício académico — TP2 Cibersegurança, ESTG/IPVC. Alvo, nomes e dados fictícios. Nenhum pagamento ou recolha de dados.</small></div></footer>
+</body>
+</html>
